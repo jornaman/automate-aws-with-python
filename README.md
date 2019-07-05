@@ -1,2 +1,3 @@
-# automate-aws-with-python
-Repository for automating AWS with Python course
+# Automating AWS with Python
+
+Repository for ACG Automating AWS with Python
