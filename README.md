@@ -11,3 +11,4 @@ optionally configure Route 53 and cloudfront as well.
 
 - List bucket
 - List contents of a bucket
+- Create and setup bucket
