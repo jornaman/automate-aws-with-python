@@ -69,7 +69,7 @@ class BucketManager:
 
 		
 	def configure_website(self, bucket):
-		""" ."""
+		"""Configure s3 website hosting for bucket."""
 		bucket.Website().put(WebsiteConfiguration={
 			'ErrorDocument': { 'Key': 'error.html' }, 
 			'IndexDocument': { 'Suffix': 'index.html' }
@@ -89,6 +89,7 @@ class BucketManager:
 		)
 
 	def sync(self, pathname, bucket_name):
+		"""Sync contents of path to bucket."""
 		bucket = self.s3.Bucket(bucket_name)
 		root = Path(pathname).expanduser().resolve()
 	
