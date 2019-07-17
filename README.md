@@ -13,3 +13,4 @@ optionally configure Route 53 and cloudfront as well.
 - List contents of a bucket
 - Create and setup bucket
 - Sync directory tree to Bucket
+- Set AWS profile with --profile=<profileName>
