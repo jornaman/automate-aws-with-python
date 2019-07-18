@@ -11,7 +11,7 @@ pylint = "*"
 pyflakes = "*"
 
 [packages]
-click = "*"
+click = {path = "C:/Users/tstlouis001/Downloads/Click-7.0-py2.py3-none-any_1.whl"}
 
 [requires]
 python_version = "3.7"
