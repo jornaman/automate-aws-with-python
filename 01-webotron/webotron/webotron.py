@@ -1,5 +1,4 @@
 #!/usr/bin/python
-
 # -*- coding: utf-8 -*-
 
 """Webotron: Deploy websites with aws.
@@ -14,8 +13,8 @@ Webotron automates the process of deploying static websites to AWS.
 """
 
 import boto3
-##import sys
 import click
+import sys
 
 from bucket import BucketManager
 
@@ -24,7 +23,8 @@ bucket_manager = None
 
 
 @click.group()
-@click.option('--profile', default=None, help="Use a given AWS profile.")
+@click.option('--profile', default=None, 
+			help="Use a given AWS profile.")
 def cli(profile):
 	"""Webotron deploys websites to S3."""
 	global session, bucket_manager
@@ -72,7 +72,7 @@ def sync(pathname, bucket):
 
 	
 if __name__ == '__main__':
-	##print(sys.argv)
+	print(sys.argv)
 	##for bucket in s3.buckets.all():
 	##	print(bucket)
 	##list_buckets()
