@@ -29,7 +29,8 @@ class BucketManager:
 		"""Get the website URL for this bucket."""
 		return "http://{}.{}".format(
 			bucket.name,
-			util.get_endpoint(self.get_region_name(bucket)).host)
+			util.get_endpoint(self.get_region_name(bucket)).host
+			)
 	
 	
 	def all_buckets(self):
