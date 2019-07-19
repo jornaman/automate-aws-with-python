@@ -10,6 +10,7 @@ ipython = "*"
 [packages]
 boto3 = "*"
 click = {path = "C:/Users/tstlouis001/Downloads/Click-7.0-py2.py3-none-any_1.whl"}
+logging = "*"
 
 [requires]
 python_version = "3.7"
