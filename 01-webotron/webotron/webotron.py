@@ -18,6 +18,7 @@ import click
 
 from bucket import BucketManager
 from domain import DomainManager
+import util
 
 session = None
 bucket_manager = None
@@ -76,11 +77,14 @@ def sync(pathname, bucket):
 
 @cli.command('setup-domain')
 @click.argument('domain')
-@click.argument('bucket')
-def setup_domain(domain, bucket):
+def setup_domain(domain):
 	"""Configure DOMAIN to point to BUCKET."""
-	zone = domain_manager.find_hosted_zone(domain)
-	print(zone)
+	bucket = bucket_manager.get_bucket(domain)
+	zone = domain_manager.find_hosted_zone(domain) or domain_manager.create_hosted_zone(domain)
+	
+	endpoint = util.get_endpoint(bucket_manager.get_region_name(bucket))
+	domain_manager.create_s3_domain_record(zone, domain, endpoint)
+	print("Domain configure: http://{}".format(domain))
 	
 
 if __name__ == '__main__':
