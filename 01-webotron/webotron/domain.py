@@ -3,7 +3,6 @@
 """Classes for Route 53 domains."""
 
 import uuid
-import util
 
 
 class DomainManager:
