@@ -3,6 +3,7 @@
 """Utilities for webotron."""
 
 from collections import namedtuple
+import logging
 
 Endpoint = namedtuple('Endpoint', ['name', 'host', 'zone'])
 

@@ -12,6 +12,7 @@ pyflakes = "*"
 
 [packages]
 click = {path = "C:/Users/tstlouis001/Downloads/Click-7.0-py2.py3-none-any_1.whl"}
+boto3 = "*"
 
 [requires]
 python_version = "3.7"
