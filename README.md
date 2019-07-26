@@ -4,7 +4,7 @@ Repository for ACG Automating AWS with Python
 
 ## 01-webotron
 
-Webotron is a script that will sync a local directory to an S3 bucket, and 
+Webotron is a script that will sync a local directory to an S3 bucket, and
 optionally configure Route 53 and cloudfront as well.
 
 ### Features
@@ -15,3 +15,12 @@ optionally configure Route 53 and cloudfront as well.
 - Sync directory tree to Bucket
 - Set AWS profile with --profile=<profileName>
 - Configure route 53 domain
+
+## 02-notifon
+
+Notifon is a project to notify Slack users of changes to your AWS account
+using CloudWatch Events
+
+### Features
+
+Notifon currently has the following features:
