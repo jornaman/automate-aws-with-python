@@ -9,9 +9,10 @@ pycodestyle = "*"
 pydocstyle = "*"
 pylint = "*"
 pyflakes = "*"
+ipython = "*"
 
 [packages]
-click = {path = "C:/Users/tstlouis001/Downloads/Click-7.0-py2.py3-none-any_1.whl"}
+click = "*"
 boto3 = "*"
 
 [requires]
