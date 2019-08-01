@@ -4,16 +4,11 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-click = "*"
-pycodestyle = "*"
-pydocstyle = "*"
-pylint = "*"
-pyflakes = "*"
+ipython = "*"
 
 [packages]
-click = {path = "C:/Users/tstlouis001/Downloads/Click-7.0-py2.py3-none-any.whl"}
 boto3 = "*"
-ipython = "*"
+requests = "*"
 
 [requires]
 python_version = "3.7"
