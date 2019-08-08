@@ -1,3 +1,5 @@
+02-notifon/config.dev.json
+Pipfile.lock_windows
 *.pem
 
 # Byte-compiled / optimized / DLL files
